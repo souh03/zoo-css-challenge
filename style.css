@@ -84,7 +84,7 @@ footer {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
 
@@ -96,6 +96,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: background-color 1500ms linear;
 }
 
 #badge p {
@@ -194,12 +195,16 @@ button:hover {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  
 }
 
 .membership h2 {
   color: #ff3f00;
 }
-
+.membership p {
+	max-width: 700px;
+	 text-align : center;
+}
 .membership strong {
   color: #ff7f11;
 }
@@ -207,5 +212,5 @@ button:hover {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
 }
